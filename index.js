@@ -10,7 +10,7 @@ document.querySelector("#submit").addEventListener('click', () => {
     const message = document.getElementById('message').value;
 
     if (name && email && phone && message) {
-        fetch('http://localhost:5000/api/contact', {
+        fetch('https://ticket-booking-site-production.up.railway.app/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
